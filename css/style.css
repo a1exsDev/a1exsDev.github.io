@@ -12,7 +12,7 @@
 {
     --clr: #222327;
 }
-body
+body .navBar
 {
     display: flex;
     justify-content: center;
