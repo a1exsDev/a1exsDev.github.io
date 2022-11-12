@@ -12,12 +12,8 @@
 {
     --clr: #222327;
 }
-body .navBar
+body
 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
     background: var(--clr);
 }
 .navBar .navigation
