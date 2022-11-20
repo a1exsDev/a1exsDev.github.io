@@ -10,16 +10,19 @@ nav, header, footer {
 body {
     line-height: 1;
     margin: 0;
+    background-color: #4d4d4d;
 }
 
 label {
     font-size: 35px;
     font-weight: 600;
+    color: #fff;
 }
 
 p {
     font-size: 28px;
     line-height: 1.2;
+    color: #fff;
 }
 
 article p  {
@@ -32,6 +35,7 @@ article p  {
     margin: auto;
     padding-top: 4%;
     padding-bottom: 4%;
+    background-color: #4d4d4d;
 }
 
 
@@ -75,7 +79,7 @@ nav {
 }
 
 nav ul {
-    background-color: #eee;
+    background-color: #737373;
     overflow: hidden;
     margin: 0;
     padding: 0;
@@ -92,17 +96,18 @@ ul.topnav li.topnav-right {
 
 ul.topnav li a {
     display: block;
-    color: #666;
     font-family: 'Poppins', sans-serif;
     text-decoration: none;
     min-height: 16px;
     text-align: center;
     padding: 14px;
     text-transform: uppercase;
+    color: #cccbcc;
+    background-color: #737373; 
 }
 
 ul.topnav li a:hover {
-    background-color: #0080ff;
+    background-color: #404040;
     color: #fff;
 }
 
@@ -125,6 +130,7 @@ div.box {
     border-radius: 7px;
     background-color: #fff;
     box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, .15), 0 2px 3px 0 rgba(0, 0, 0, .1);
+    background-color: #737373;
 }
 
 div.imgDiv {
@@ -187,6 +193,12 @@ input[type="text"] {
     min-width: 100px;
     padding: 0.50%;
     border-radius: 7px;
+    background-color: #4d4d4d;
+    color: #fff;
+}
+
+input::placeholder {
+    color: #737373;
 }
 
 footer.footer-1 {
@@ -294,24 +306,6 @@ footer.footer-1 ul li {
         overflow: hidden;
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
