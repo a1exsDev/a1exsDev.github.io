@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+        <link rel="stylesheet" href="css/style.css">
+        <title>CSS website</title>
+    </head>
+        <nav>
+            <ul class="topnav" id="mobileMenu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#news">News</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li class="topnav-right"><a href="#signup">Sign Up</a></li>
+                <li class="topnav-right"><a href="login.html">Sign In</a></li>
+                <li class="dropdown"><a href="javascript:void(0);" onclick="displayMenu()">&#9776;</a></li>
+            </ul>
+        </nav>
+
+        <div class="container" id="section-1">
+            <div class="row">
+                <div class="col-6">
+                    <div class="leftSide-col">
+                        <h2 class="large">Welcome to</h2>
+                        <h1 class="large">Alex's Website</h1>
+                    </div>
+                    <form>
+                        <div class="leftSide-col">
+                            <h2>Name</h2>
+                            <input class="input" type="text" placeholder="John Doe">
+                            <h2>Email</h2>
+                            <input class="input" type="text" placeholder="email@email.com">
+                        </div>
+                    </form>
+                </div>
+                <div class="col-6">
+                    <div class="rightSide-col">
+                        <div class="vid">
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <header>
+            <h1 class="middleHeader">Things about ME!</h1>
+        </header>
+        <div class="container">
+            <div class="row">
+                <div class="col-4">
+                    <div class="box">
+                        <div class="imgDiv">
+                            <img src="img/zuesBirthdayIcon.JPG">
+                        </div>
+                            <label>ZUES</label>
+                            <p>Zues is my doggo which I love with my life. He is a very well behaved boy and loves treats. He is 3 years old and his birthday is every October 30th. </p>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="box">
+                        <div class="imgDiv">
+                            <img src="img/logo_small.png">
+                        </div>
+                        <label>Games</label>
+                        <p>I like playing lots of games including Roblox and Minecraft. I have been gaming ever since I was 5 years old.</p>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="box">
+                        <div class="imgDiv">
+                            <img src="img/logo_small.png">
+                            </div>
+                            <label>Programming</label>
+                            <p>I have been programming for a year and a half and have gone a lone journey since I began. Origanally, I started programming with block based programming following some tutorials, then giving myself more difficult challanges with I have pleasure in doing.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <button class="learnButton">Learn more about me</button>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="container">
+            <div class="row">
+                <div class="col-7">
+                    <article>
+                        <p>Alex's finally finished the Advanced CSS portion and is on his way to the Javascript section. Then he can finally start what he couldn't earlier, using Git. By the end of this course, he will know how to build a website better then he could two weeks ago. He will be able to make his home page look STUNNING and make everyone ask him to make them a website. He will then teach his fellow friend Cameron how to build a decent website which he will be able to use and just to add it, a picture of my company that I just thought up.</p>
+                    </article>
+                </div>
+                <div class="col-5">
+                    <div class="logoIcon">
+                        <img src="img/logo_medium.png">
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <footer class="footer-1">
+            <div class="row">
+                <div class="col-3 mobileFooter">
+                    <h1>Group</h1>
+                    <ul>
+                        <li>About</li>
+                        <li>Blogs</li>
+                        <li>Careers</li>
+                    </ul>
+                </div>
+                <div class="col-3 mobileFooter">
+                    <h1>Websites</h1>
+                    <ul>
+                        <li>This One</li>
+                        <li>My Friend's</li>
+                        <li>My favorite one</li>
+                    </ul>
+                </div>
+                <div class="col-3 mobileFooter">
+                    <h1>Learn More</h1>
+                    <ul>
+                        <li>Developers</li>
+                        <li>Designers</li>
+                        <li>Gamers</li>
+                    </ul>
+                </div>
+                <div class="col-3 mobileFooter">
+                    <h1>FOOD</h1>
+                    <ul>
+                        <li>STAKE</li>
+                        <li>Dino Nuggies</li>
+                        <li>CHEESE STICKS</li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+    
+        
+        
+            
+        
+        
+        
+        
+        
+        <script>
+            var mobileMenu = document.getElementById('mobileMenu');
+            function displayMenu() {
+                if (mobileMenu.className === "topnav") {
+                    mobileMenu.className += " mobile";
+                    <!-- changing topnav to topnav mobile -->
+                } else {
+                    mobileMenu.className = "topnav";
+                }
+            }
+        </script>
+    </body>
+</html>
