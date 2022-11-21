@@ -222,7 +222,7 @@ footer.footer-1 ul li {
 
 
 /*############## Mobile Formating ##############*/
-@media screen and (max-width: 780px) {
+@media screen and (max-width: 980px) {
     ul.topnav li:not(:nth-child(1)) {
         display: none;
     }
