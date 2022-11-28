@@ -1,12 +1,28 @@
 <!doctype html>
-<html>
+<html><html lang="en">
     <head>
-        <title>Alex's Site - About Me</title>
+        <meta charset="utf-8">
+        <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+        <link rel="stylesheet" href="css/index.css">
+        <title>About Us</title>
     </head>
-    <body>
+        <nav>
+            <ul class="topnav" id="mobileMenu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#news">News</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li class="topnav-right"><a href="login.html">Sign Up</a></li>
+                <li class="topnav-right"><a href="login.html">Sign In</a></li>
+                <li class="dropdown"><a href="javascript:void(0);" onclick="displayMenu()">&#9776;</a></li>
+            </ul>
+        </nav>
+        
         <h1>About Me</h1>
         <p>I am Alex Valdez and a programmer in various differnt lanugaues including HTML5, Javascript, Python 3, and more. Programming is my <b>passion</b> and is something I love even with all the challanges.</p>
-        <h4>I love my dog, Zues, with <b>ALL</b> my heart and here is a picture of him.</h4> <img src="img/zuesBirthday.JPG" alt="Zues on his birthday." width="81.1" height="6.1">
+        <h4>I love my dog, Zues, with <b>ALL</b> my heart and here is a picture of him.</h4>
+        <img src="img/zuesBirthday.JPG" alt="Zues on his birthday." width="81.1" height="6.1">
+        
         <table cellpadding="1" cellspacing="1">
             <tr>
                 <!--  <td><a href="htmlpage.html">Example</a></td>  -->
@@ -15,5 +31,55 @@
                 <td><button><a href="https://account.xbox.com/en-us/profile?gamertag=FlashFast6879">Xbox Account</a></button></td>
             </tr>
         </table>
+
+        <footer class="footer-1">
+            <div class="row">
+                <div class="col-3 mobileFooter">
+                    <h1>Group</h1>
+                    <ul>
+                        <li>About</li>
+                        <li>Blogs</li>
+                        <li>Careers</li>
+                    </ul>
+                </div>
+                <div class="col-3 mobileFooter">
+                    <h1>Websites</h1>
+                    <ul>
+                        <li>This One</li>
+                        <li>My Friend's</li>
+                        <li>My favorite one</li>
+                    </ul>
+                </div>
+                <div class="col-3 mobileFooter">
+                    <h1>Learn More</h1>
+                    <ul>
+                        <li>Developers</li>
+                        <li>Designers</li>
+                        <li>Gamers</li>
+                    </ul>
+                </div>
+                <div class="col-3 mobileFooter">
+                    <h1>FOOD</h1>
+                    <ul>
+                        <li>STAKE</li>
+                        <li>Dino Nuggies</li>
+                        <li>CHEESE STICKS</li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+
+        <script>
+            var mobileMenu = document.getElementById('mobileMenu');
+            function displayMenu() {
+                if (mobileMenu.className === "topnav") {
+                    mobileMenu.className += " mobile";
+                    <!-- changing topnav to topnav mobile -->
+                } else {
+                    mobileMenu.className = "topnav";
+                }
+            }
+        </script>
+
     </body>
 </html>
