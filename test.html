@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nintendo Switch Navigator Info</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Nintendo Switch Navigator Information</h1>
+  <pre id="navigator-info"></pre>
+
+  <script>
+    // Get navigator information
+    const navigatorInfo = JSON.stringify(navigator, null, 2);
+
+    // Display it on the webpage
+    document.getElementById('navigator-info').textContent = navigatorInfo;
+
+    // Optionally log to the console
+    console.log(navigator);
+  </script>
+</body>
+</html>
